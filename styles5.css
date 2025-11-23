@@ -1,0 +1,110 @@
+*{
+    font-family: monospace;
+    font-size: large;
+}
+body {
+    margin: 10px;
+    padding: 20px;
+}
+#main_header{
+    text-align: left;
+    font-size: xxx-large;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    background-color: #ddd;
+    padding: 10px;
+    top: 5px;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -10px;
+    gap: 5px; 
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 230px;
+}
+a.nav-link {
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+hr{
+    border: solid black 1px;
+    width: 200px;
+    margin-left: 5px;
+}
+#main-doc{
+    margin-left: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+#main_hr{
+    border: solid black 1px;
+    width: 100%;
+    margin-left: 0px;
+}
+#section_header{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+code{
+    display: block;
+    overflow-x: auto;          
+    line-height: 1.6;
+    background-color: #f3f3f3; 
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-family: Consolas, monospace;
+    font-size: 0.95rem;
+}
+ul{
+    list-style-type: none;
+}
+/* #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    left: 0;
+    top: 200px;
+    position: fixed;
+    width: 250px;
+} */
+@media (max-width: 600px) {
+
+    .nav {
+        position: static;     /* sidebar goes back to normal flow */
+        width: 100%;          /* full width */
+        display: block;
+        padding: 0;
+        margin-left: 0px;
+    }
+
+    #main_header {
+        position: static;
+        font-size: xx-large;
+    }
+
+    #main-doc {
+        margin-left: 0;       /* remove giant margin */
+        padding-top: 20px;
+    }
+}
+
+
+
+
